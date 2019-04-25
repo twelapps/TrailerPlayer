@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieDetailViewController" customModule="TrailerPlayer" customModuleProvider="target">
+            <connections>
+                <outlet property="FavOrUnfavButton" destination="bY8-TT-t71" id="sKt-qt-yfa"/>
+                <outlet property="FavoriteSymbol" destination="tmU-V2-TmU" id="u8a-ar-lym"/>
+                <outlet property="MovieGenre" destination="XXg-9n-AT6" id="YVM-Hv-VpM"/>
+                <outlet property="MovieLongDescription" destination="Gvz-EM-eaX" id="LJQ-No-QXx"/>
+                <outlet property="MoviePoster" destination="ZbB-pl-8cd" id="gdO-7X-c5b"/>
+                <outlet property="MovieThumbNail" destination="59C-xQ-vYi" id="52o-e4-5pH"/>
+                <outlet property="MovieTrailer" destination="WzQ-XH-Twq" id="4Fz-lk-mZ3"/>
+                <outlet property="movieTitle" destination="QRC-uy-eiN" id="sdI-2j-ESQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRC-uy-eiN">
+                    <rect key="frame" x="156" y="314.5" width="107" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="iDG-gJ-SHv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzQ-XH-Twq">
+                    <rect key="frame" x="144" y="402.5" width="55" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Hod-xh-YMe"/>
+                        <constraint firstAttribute="width" constant="55" id="uHq-dP-PcR"/>
+                    </constraints>
+                    <size key="titleShadowOffset" width="10" height="10"/>
+                    <state key="normal" title="Trailer" image="play_symbol"/>
+                    <connections>
+                        <action selector="PlayTrailer:" destination="-1" eventType="touchDown" id="Jjo-07-YOV"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gvz-EM-eaX">
+                    <rect key="frame" x="8" y="450.5" width="359" height="152.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Genre: " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XXg-9n-AT6">
+                    <rect key="frame" x="8" y="609" width="359" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Brw-ul-kgc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="59C-xQ-vYi">
+                    <rect key="frame" x="8" y="314.5" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="372-xl-Hbp"/>
+                        <constraint firstAttribute="height" constant="128" id="MZb-TW-hxz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-pl-8cd">
+                    <rect key="frame" x="8" y="28" width="359" height="278.5"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite_symbol" translatesAutoresizingMaskIntoConstraints="NO" id="tmU-V2-TmU">
+                    <rect key="frame" x="347" y="356.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="HeT-jE-CoG"/>
+                        <constraint firstAttribute="height" constant="20" id="mp6-6L-gVX"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY8-TT-t71">
+                    <rect key="frame" x="317" y="392.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="aiR-Sb-QKA"/>
+                    </constraints>
+                    <state key="normal" image="Thumb_up"/>
+                    <connections>
+                        <action selector="FavOrUnfavAction:" destination="-1" eventType="touchUpInside" id="Uhl-Zh-fqv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxO-Ok-Bzi">
+                    <rect key="frame" x="232" y="402.5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="uw1-dJ-0zQ"/>
+                    </constraints>
+                    <state key="normal" image="share"/>
+                    <connections>
+                        <action selector="SharingAction:" destination="-1" eventType="touchUpInside" id="7ZA-Cr-Amo"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZbB-pl-8cd" firstAttribute="leading" secondItem="59C-xQ-vYi" secondAttribute="leading" id="3RX-2R-qdh"/>
+                <constraint firstItem="XXg-9n-AT6" firstAttribute="top" secondItem="Gvz-EM-eaX" secondAttribute="bottom" constant="6" id="5Hk-g6-pwC"/>
+                <constraint firstItem="bY8-TT-t71" firstAttribute="leading" secondItem="NxO-Ok-Bzi" secondAttribute="trailing" constant="45" id="5Jv-Jv-Zia"/>
+                <constraint firstItem="ZbB-pl-8cd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6ul-eT-jUR"/>
+                <constraint firstItem="QRC-uy-eiN" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="8QE-Ye-Pbe"/>
+                <constraint firstItem="WzQ-XH-Twq" firstAttribute="top" secondItem="QRC-uy-eiN" secondAttribute="bottom" constant="50" id="Byi-lK-D8R"/>
+                <constraint firstItem="tmU-V2-TmU" firstAttribute="top" secondItem="ZbB-pl-8cd" secondAttribute="bottom" constant="50" id="C8A-cd-7By"/>
+                <constraint firstItem="bY8-TT-t71" firstAttribute="trailing" secondItem="Gvz-EM-eaX" secondAttribute="trailing" id="DOv-R9-EZX"/>
+                <constraint firstItem="59C-xQ-vYi" firstAttribute="top" secondItem="QRC-uy-eiN" secondAttribute="top" id="GoU-z7-WZn"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="top" secondItem="59C-xQ-vYi" secondAttribute="bottom" constant="8" symbolic="YES" id="HAc-ZD-NuS"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="trailing" secondItem="XXg-9n-AT6" secondAttribute="trailing" id="HLx-dS-AtO"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="top" secondItem="WzQ-XH-Twq" secondAttribute="bottom" constant="8" symbolic="YES" id="IZ6-wL-Bnf"/>
+                <constraint firstItem="tmU-V2-TmU" firstAttribute="trailing" secondItem="bY8-TT-t71" secondAttribute="trailing" id="PGu-5c-9e5"/>
+                <constraint firstItem="ZbB-pl-8cd" firstAttribute="top" secondItem="683-wA-6da" secondAttribute="top" constant="8" id="QKn-7o-aCW"/>
+                <constraint firstItem="NxO-Ok-Bzi" firstAttribute="leading" secondItem="WzQ-XH-Twq" secondAttribute="trailing" constant="33" id="VoA-KR-EFu"/>
+                <constraint firstItem="NxO-Ok-Bzi" firstAttribute="top" secondItem="QRC-uy-eiN" secondAttribute="bottom" constant="50" id="ZYV-fI-fjj"/>
+                <constraint firstItem="ZbB-pl-8cd" firstAttribute="trailing" secondItem="tmU-V2-TmU" secondAttribute="trailing" id="Zsd-GI-kBH"/>
+                <constraint firstItem="ZbB-pl-8cd" firstAttribute="leading" secondItem="683-wA-6da" secondAttribute="leading" constant="8" id="ag4-Nl-71z"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="leading" secondItem="XXg-9n-AT6" secondAttribute="leading" id="bcn-YI-I62"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="top" secondItem="bY8-TT-t71" secondAttribute="bottom" constant="8" symbolic="YES" id="cZ0-yE-b81"/>
+                <constraint firstItem="WzQ-XH-Twq" firstAttribute="leading" secondItem="59C-xQ-vYi" secondAttribute="trailing" constant="8" symbolic="YES" id="jOo-x8-N3P"/>
+                <constraint firstItem="59C-xQ-vYi" firstAttribute="leading" secondItem="Gvz-EM-eaX" secondAttribute="leading" id="lNa-0q-tBR"/>
+                <constraint firstItem="683-wA-6da" firstAttribute="bottom" secondItem="XXg-9n-AT6" secondAttribute="bottom" constant="8" id="lXz-Af-krJ"/>
+                <constraint firstItem="QRC-uy-eiN" firstAttribute="leading" secondItem="59C-xQ-vYi" secondAttribute="trailing" constant="20" id="laP-pU-rdZ"/>
+                <constraint firstItem="Gvz-EM-eaX" firstAttribute="top" secondItem="NxO-Ok-Bzi" secondAttribute="bottom" constant="8" id="n4x-iO-W9E"/>
+                <constraint firstItem="59C-xQ-vYi" firstAttribute="top" secondItem="ZbB-pl-8cd" secondAttribute="bottom" constant="8" symbolic="YES" id="sO6-El-m00"/>
+                <constraint firstItem="bY8-TT-t71" firstAttribute="top" secondItem="tmU-V2-TmU" secondAttribute="bottom" constant="16" id="yzc-9o-E0y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="683-wA-6da"/>
+            <point key="canvasLocation" x="34.5" y="80.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Thumb_up" width="225" height="225"/>
+        <image name="favorite_symbol" width="190" height="266"/>
+        <image name="play_symbol" width="550" height="425"/>
+        <image name="share" width="504" height="504"/>
+    </resources>
+</document>
