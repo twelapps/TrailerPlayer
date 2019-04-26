@@ -82,36 +82,44 @@
 		3401792A22611E3100D0EA75 /* TrailerPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				3401794322612C9D00D0EA75 /* MovieDetailViewController */,
-				3401793E22611EDA00D0EA75 /* MovieTableViewCell */,
+				3461FCA1227345DF00522AA5 /* Controllers */,
+				3461FCA0227345D300522AA5 /* Views */,
+				3461FC9F2273453900522AA5 /* Models */,
 				3401792B22611E3100D0EA75 /* AppDelegate.swift */,
-				3401792D22611E3100D0EA75 /* ViewController.swift */,
-				3401792F22611E3100D0EA75 /* Main.storyboard */,
 				3401793222611E3100D0EA75 /* Assets.xcassets */,
 				3401793422611E3100D0EA75 /* LaunchScreen.storyboard */,
 				3401793722611E3100D0EA75 /* Info.plist */,
-				3401794822612D5900D0EA75 /* Movie.swift */,
-				34F882592272060000270E05 /* FullMovie.swift */,
 			);
 			path = TrailerPlayer;
 			sourceTree = "<group>";
 		};
-		3401793E22611EDA00D0EA75 /* MovieTableViewCell */ = {
+		3461FC9F2273453900522AA5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				3401793F22611F0800D0EA75 /* MovieTableViewCell.swift */,
-				3401794022611F0800D0EA75 /* MovieTableViewCell.xib */,
+				3401794822612D5900D0EA75 /* Movie.swift */,
+				34F882592272060000270E05 /* FullMovie.swift */,
 			);
-			path = MovieTableViewCell;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		3401794322612C9D00D0EA75 /* MovieDetailViewController */ = {
+		3461FCA0227345D300522AA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3401794522612CCE00D0EA75 /* MovieDetailViewController.xib */,
+				3401794022611F0800D0EA75 /* MovieTableViewCell.xib */,
+				3401792F22611E3100D0EA75 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3461FCA1227345DF00522AA5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				3401794422612CCE00D0EA75 /* MovieDetailViewController.swift */,
-				3401794522612CCE00D0EA75 /* MovieDetailViewController.xib */,
+				3401792D22611E3100D0EA75 /* ViewController.swift */,
 			);
-			path = MovieDetailViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		39B457B56E0C8CD85B3ED3E6 /* Frameworks */ = {
